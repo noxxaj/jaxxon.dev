@@ -1,69 +1,66 @@
 body {
-  background-color: rgb(200, 200, 255);
+  background-color: rgb(26, 26, 42);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
   color: rgb(53, 66, 79);
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 30pt;
-}
-
-h2 {
-  font-size: 15pt;
-}
-
-.text-center {
-  text-align: center;
+a {
+  text-decoration: none;
+  color: rgb(53, 66, 79);
+  font-weight: bold ;
 }
 
 .container {
-  margin: 0 auto;
+  margin: auto;
   width: 50%;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
-@media screen and (min-width: 800px) {
-  body {
-    background-color: lightgreen;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    background-color: brown;
-  }
+.content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .card {
-  background-color: rgb(248, 255, 225);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.27);
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+.content p {
+  text-align: center;
+  line-height: 30pt;
+  background-color: rgb(235, 254, 242);
   border-radius: 25px;
-  margin: 20px 0px;
   padding: 20px;
 }
 
-.btn-blue {
-  background-color: #6B72E1;
-  color: white;
-  padding: 15px;
-  border-radius: 20px;
-  border: none;
+.content a {
+  background:
+    linear-gradient(
+      to right,
+      rgb(85, 147, 130),
+      rgb(85, 147, 130)
+    ),
+    linear-gradient(
+      to right,
+      rgb(0, 255, 34),
+      rgb(0, 255, 229),
+      rgb(93, 174, 255)
+  );
+  background-size: 100% 5px, 0 5px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 300ms;
 }
 
-.btn-blue:hover {
-  background-color: #3e45a5;
-}
-
-.rounded-img {
-  border-radius: 10px;
-}
-
-.list {
-  font-size: 100px;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-
-.list a {
-  color: #6B72E1;
+.content a:hover {
+  background-size: 0 100%, 100% 100%;
 }
