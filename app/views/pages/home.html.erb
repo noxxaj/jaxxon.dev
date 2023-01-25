@@ -3,7 +3,10 @@
     <div class="text-left">
       <p>hi</p>
       <% @projects.each do |project| %>
-        <div><%=project.name%></div>
+        <%=project.name%>
+        <%=project.language%>
+        <%=project.description%>
+
       <% end %>
     </div>
   </div>
