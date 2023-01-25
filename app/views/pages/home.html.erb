@@ -1,0 +1,10 @@
+<div class="container bg-green">
+  <div class="flex content-around">
+    <div class="text-left">
+      <p>hi</p>
+      <% @projects.each do |project| %>
+        <div><%=project.name%></div>
+      <% end %>
+    </div>
+  </div>
+</div>

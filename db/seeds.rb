@@ -5,7 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
 
-
-project = Project.create(name: "Web app", description: "this is a great web app", category: "web development")
-project.save!
+10.times do
+  project = Project.create(
+    name: Faker::Company.bs.to_s,
+    description: 'this is a great web app',
+    category: 'web development',
+    language: Faker::ProgrammingLanguage.name.to_s
+  )
+  project.save!
+end
