@@ -1,5 +1,27 @@
 @layer components {
   .footer {
-    @apply flex content-center justify-center place-items-center gap-1
+    @apply flex content-center justify-around place-items-center gap-1 border-t-4 mt-4 pt-4
+  }
+
+  .footer-column .footer-item {
+    @apply flex items-center gap-2 p-3 relative
+  }
+
+  .copied.tooltip:before {
+    content: attr(data-text);
+    position: absolute;
+    top:-20%;
+    transform:translateY(-50%);
+    left:0%;
+    inset: auto 0;
+    margin-left:15px;
+    width:300px;
+    padding:10px;
+    border-radius:10px;
+    background:#000;
+    color: #fff;
+    text-align:center;
+    z-index: 1;
+    display:block;
   }
 }
