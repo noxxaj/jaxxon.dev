@@ -1,23 +1,39 @@
 <div class="footer">
 
   <div class="footer-column">
-    <div class="footer-item">
-      <a href='https://github.com/noxxaj'><box-icon type='logo' name='github' color='white'></box-icon>Github</a>
-    </div>
-
-    <div class="footer-item">
-      <a href='https://www.linkedin.com/in/jaxxon-alta/'><box-icon name='linkedin-square' type='logo' color='white' ></box-icon>LinkedIn</a>
-    </div>
-
-    <div class="footer-item">
-      <a href='https://lewagon-alumni.slack.com/team/U03C18ZG9DX'><box-icon name='slack' type='logo' color='white'></box-icon>Slack</a>
-    </div>
+      <a class="footer-item" href='https://github.com/noxxaj'>
+        <box-icon type='logo' name='github' color='white' size='2em'></box-icon>
+        <p>Github</p>
+      </a>
+      <a class="footer-item" href='https://www.linkedin.com/in/jaxxon-alta/'>
+        <box-icon name='linkedin-square' type='logo' color='white' size='2em'></box-icon>
+        <p>LinkedIn</p>
+      </a>
+      <a class="footer-item" href='https://lewagon-alumni.slack.com/team/U03C18ZG9DX'>
+        <box-icon name='slack' type='logo' color='white' size='2em'></box-icon>
+        <p>Slack</p>
+      </a>
   </div>
 
   <div class="footer-column">
-    <div class="footer-item">
-      <a href="mailto:hello@jaxxon.dev"><box-icon type='solid' name='envelope' color="white"></box-icon>hello@jaxxon.dev</a>
-    </div>
+      <a class="footer-item cursor-pointer" onclick='clipboard("hello@jaxxon.dev")'>
+        <box-icon type='solid' name='envelope' color="white" size='2em'></box-icon>
+        <p data-text="copied to your clipboard" class="tooltip">hello@jaxxon.dev</p>
+      </a>
   </div>
+
+<script>
+  let tooltip = document.querySelector(".tooltip")
+
+  function clipboard(text) {
+    navigator.clipboard.writeText(text);
+    tooltip.classList.add("copied");
+    setTimeout(hideTooltip, 3000);
+  }
+
+  function hideTooltip() {
+    tooltip.classList.remove("copied");
+  }
+</script>
 
 </div>
