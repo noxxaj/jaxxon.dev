@@ -1,5 +1,9 @@
 @layer components {
   .footer {
-    @apply flex content-center justify-center place-items-center gap-1
+    @apply flex content-center justify-around place-items-center gap-1 border-t-4 mt-4 pt-4
+  }
+
+  .footer-item {
+    @apply place-items-center content-center color-emerald
   }
 }
