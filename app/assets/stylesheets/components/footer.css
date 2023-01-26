@@ -1,27 +1,23 @@
 @layer components {
   .footer {
-    @apply flex content-center justify-around place-items-center gap-1 border-t-4 mt-4 pt-4
+    @apply flex content-center justify-around
+    place-items-center border-t-2 border-dotted mt-4 py-5 bg-primary
   }
 
-  .footer-column .footer-item {
-    @apply flex items-center gap-2 p-3 relative
+  .footer-row {
+    @apply flex gap-10
+  }
+
+  .footer-row .footer-item {
+    @apply flex items-center gap-2 p-1 relative
   }
 
   .copied.tooltip:before {
-    content: attr(data-text);
-    position: absolute;
-    top:-20%;
-    transform:translateY(-50%);
-    left:0%;
-    inset: auto 0;
-    margin-left:15px;
-    width:300px;
-    padding:10px;
-    border-radius:10px;
-    background:#000;
-    color: #fff;
-    text-align:center;
-    z-index: 1;
-    display:block;
+    @apply -translate-y-2/4 absolute z-10 left-0 -top-5 rounded w-max
+    ml-3 p-2 text-center block bg-black text-secondary content-[attr(data-text)]
+  }
+
+  .copied.tooltip:after {
+    @apply -translate-y-2/4 absolute
   }
 }
