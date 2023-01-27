@@ -1,24 +1,11 @@
-# README
+# jaxxon.dev
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi 👋
 
-Things you may want to cover:
+Welcome to my portfolio site. Here you'll find some of the projects I've made or am currently working on.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This site uses:
+* rails 7.0.1.4
+* ruby 3.0.3
+* postgresql
+* stimulus
