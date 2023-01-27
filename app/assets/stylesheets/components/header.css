@@ -1,0 +1,10 @@
+@layer components {
+
+  .header {
+    @apply flex justify-center mt-4 p-5 text-xl
+  }
+
+  .header-row {
+    @apply flex gap-10
+  }
+}

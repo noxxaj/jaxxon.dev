@@ -16,8 +16,4 @@
     @apply -translate-y-2/4 absolute z-10 left-0 -top-5 rounded w-max
     ml-3 p-2 text-center block bg-black text-secondary content-[attr(data-text)]
   }
-
-  .copied.tooltip:after {
-    @apply -translate-y-2/4 absolute
-  }
 }

@@ -17,13 +17,23 @@
 
   <div class="footer-row">
     <a class="footer-item cursor-pointer" onclick='clipboard("hello@jaxxon.dev")'>
-      <box-icon type='solid' name='envelope' color="white" size='2em'></box-icon>
-      <p data-text="Copied to clipboard." class="tooltip">hello@jaxxon.dev</p>
+      <box-icon id='email-icon' animation='none' type='solid' name='envelope'
+      color="white" size='2em'></box-icon>
+      <p data-text="Copied to clipboard." class="tooltip"
+         onmouseover="toggleAnimation('tada')"
+         onmouseout="toggleAnimation('none')">
+         hello@jaxxon.dev
+      </p>
     </a>
   </div>
 
   <script>
     let tooltip = document.querySelector(".tooltip")
+    let emailIcon = document.querySelector("#email-icon")
+
+    function toggleAnimation(input) {
+      emailIcon.attributes['animation'].nodeValue = input;
+    }
 
     function clipboard(text) {
       navigator.clipboard.writeText(text);

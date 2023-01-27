@@ -13,7 +13,8 @@
   </head>
 
   <body class="bg-primary flex flex-col text-secondary min-h-screen">
-    <main class="container flex-1 mx-auto mt-16 px-5 flex">
+    <%= render 'shared/header'%>
+    <main class="container flex-1 mx-auto mt-16 p-5 flex">
       <%= yield %>
     </main>
     <%= render 'shared/footer'  %>
