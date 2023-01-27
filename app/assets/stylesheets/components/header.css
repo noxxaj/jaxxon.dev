@@ -7,4 +7,11 @@
   .header-row {
     @apply flex gap-10
   }
+
+  .header-item:hover {
+    @apply underline underline-offset-8 decoration-from-font active:decoration-2
+  }
+  .header-item.current {
+    @apply font-semibold no-underline
+  }
 }
