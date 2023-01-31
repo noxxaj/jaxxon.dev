@@ -1,17 +1,26 @@
 @layer components {
 
+  .wrapper {
+    @apply flex mt-4 p-5 text-xl items-center
+  }
+
   .header {
-    @apply flex justify-center mt-4 p-5 text-xl
+    @apply flex justify-between flex-wrap w-screen px-5
   }
 
   .header-row {
-    @apply flex gap-10
+    @apply flex gap-10 justify-center
   }
 
   .header-item:hover {
     @apply underline underline-offset-8 decoration-from-font active:decoration-2
   }
+
   .header-item.current {
     @apply font-semibold no-underline
+  }
+
+  .header #logo {
+    @apply justify-center
   }
 }

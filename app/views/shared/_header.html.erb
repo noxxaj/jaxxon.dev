@@ -1,11 +1,34 @@
-<div class="header">
-  <div class="logo">
-    <img src=''>
-  </div>
-  <div class="header-row">
-    <a class="header-item current" href="#">Home</a>
-    <a class="header-item" href="#">Projects</a>
-    <a class="header-item" href="#">About</a>
-    <a class="header-item" href="#">Contact</a>
+<div class=wrapper>
+  <div class="header">
+    <a data-value="jaxxon.dev" id="logo" href="#">jaxxon.dev</a>
+    <div class="header-row">
+      <a class="header-item current" href="#">Projects</a>
+      <a class="header-item" href="#">About</a>
+      <a class="header-item" href="#">Contact</a>
+    </div>
   </div>
 </div>
+
+<script>
+  const letters = "abcdefghijklmnopqrstuvwxyz";
+  let interval = null;
+
+  document.querySelector("#logo").onmouseover = event => {
+    let iteration = 0;
+    clearInterval(interval);
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("").map((letter, index) => {
+          if(index < iteration) {
+            return event.target.dataset.value[index];
+          }
+          return letters[Math.floor(Math.random() * 26)]
+        }).join("");
+
+      if(iteration >= event.target.dataset.value.length){
+        clearInterval(interval);
+      }
+      iteration += 1 / 3;
+    }, 15);
+  }
+</script>
