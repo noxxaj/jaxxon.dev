@@ -1,7 +1,7 @@
 @layer components {
 
   .wrapper {
-    @apply flex mt-4 p-5 text-xl items-center
+    @apply flex mt-4 p-5 text-xl items-center container mx-auto
   }
 
   .header {
