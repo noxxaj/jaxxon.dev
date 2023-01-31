@@ -12,6 +12,10 @@
     @apply flex items-center gap-2 p-1 relative
   }
 
+  .footer-item:hover {
+    @apply underline underline-offset-8 decoration-from-font active:decoration-2
+  }
+
   .copied.tooltip:before {
     @apply -translate-y-2/4 absolute z-10 left-0 -top-5 rounded w-max
     ml-3 p-2 text-center block bg-black text-secondary content-[attr(data-text)]
