@@ -73,3 +73,7 @@ end
 
 gem "tailwindcss-rails", "~> 2.0"
 gem "faker"
+
+# updated dependencies to increase security
+gem 'globalid', '~> 1.0.1'
+gem 'rack', '~> 2.2.6.1'
