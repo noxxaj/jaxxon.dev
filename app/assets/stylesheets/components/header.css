@@ -12,12 +12,16 @@
     @apply flex gap-10 justify-center
   }
 
+  .header-item {
+    @apply font-thin
+  }
+
   .header-item:hover {
     @apply underline underline-offset-8 decoration-from-font active:decoration-2
   }
 
   .header-item.current {
-    @apply font-semibold no-underline
+    @apply font-bold no-underline
   }
 
   .header #logo {
