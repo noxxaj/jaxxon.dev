@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
-    @projects = Project.all.where(featured?: true)
+    @projects = Project.all
+    # .where(featured?: true)
   end
 
   def projects

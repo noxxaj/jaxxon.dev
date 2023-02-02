@@ -2,7 +2,7 @@
   <div class="header">
     <a data-value="jaxxon.dev" id="logo" href="#">jaxxon.dev</a>
     <div class="header-row">
-      <a class="header-item current" href="#">Projects</a>
+      <a class="header-item" href="#">Projects</a>
       <a class="header-item" href="#">About</a>
       <a class="header-item" href="#">Contact</a>
     </div>
@@ -18,7 +18,7 @@
     clearInterval(interval);
     interval = setInterval(() => {
       event.target.innerText = event.target.innerText
-        .split("").map((letter, index) => {
+      .split("").map((letter, index) => {
           if(index < iteration) {
             return event.target.dataset.value[index];
           }
