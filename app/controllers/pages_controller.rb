@@ -1,11 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @projects = Project.all
-    # .where(featured?: true)
-  end
-
-  def projects
-    @projects = Project.all.order(name: :desc)
+    @projects = Project.all.where(featured?: true)
   end
 
   def about; end
