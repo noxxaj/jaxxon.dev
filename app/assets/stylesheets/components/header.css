@@ -24,7 +24,4 @@
     @apply font-bold no-underline
   }
 
-  .header #logo {
-    @apply justify-center
-  }
 }
