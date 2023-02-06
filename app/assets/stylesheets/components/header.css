@@ -9,10 +9,14 @@
   }
 
   .header-row {
-    @apply flex gap-10 justify-center
+    @apply flex gap-4 justify-center items-center
   }
 
-  .header-item {
+  #logo {
+    @apply my-auto
+  }
+
+  /* .header-item {
     @apply font-thin
   }
 
@@ -22,6 +26,6 @@
 
   .header-item.current {
     @apply font-bold no-underline
-  }
+  } */
 
 }

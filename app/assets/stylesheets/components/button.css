@@ -1,0 +1,23 @@
+@layer components {
+
+  .button {
+    @apply inline-flex items-center px-3 py-2 font-medium text-center rounded-lg transition-colors ease-in-out
+  }
+
+  .button.button-inv {
+    @apply border border-secondary bg-primary text-secondary
+  }
+
+  .button.button-inv:hover {
+    @apply border-primary text-primary bg-secondary
+  }
+
+  .button.button-cta {
+    @apply border border-primary text-primary bg-secondary
+  }
+
+  .button.button-cta:hover {
+    @apply border-secondary bg-primary text-secondary
+  }
+
+}

@@ -1,9 +1,10 @@
 <% @projects.each do |project| %>
   <div class="card">
-    <div class="project-name"><%= link_to project.name.capitalize, project_path(project.name)%></div>
     <div class="project-image"><img class=project-image-url src=<%=project.image_url%> alt="card image"></div>
-    <div class="project-language"><box-icon name="purchase-tag-alt" color="white"></box-icon><%=project.language%></div>
-    <box-icon type='logo' name='sketch' color='white'></box-icon>
+    <div class="card-content">
+      <div class="project-name"><%= link_to project.name.capitalize, project_path(project.name)%></div>
+      <%= link_to 'Read more', project_path(project.name), class: 'button button-inv bottom-0 right-0' %>
+    </div>
   </div>
 <% end %>
 
