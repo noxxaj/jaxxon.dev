@@ -13,19 +13,7 @@
   }
 
   #logo {
-    @apply my-auto
+    @apply my-auto font-mono text-2xl
   }
-
-  /* .header-item {
-    @apply font-thin
-  }
-
-  .header-item:hover {
-    @apply underline underline-offset-8 decoration-from-font active:decoration-2
-  }
-
-  .header-item.current {
-    @apply font-bold no-underline
-  } */
 
 }

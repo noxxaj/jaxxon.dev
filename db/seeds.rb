@@ -15,7 +15,7 @@ Project.destroy_all
     description: 'this is a great web app',
     category: 'web development',
     language: Faker::ProgrammingLanguage.name.to_s,
-    image_url: 'https://via.placeholder.com/400x200'
+    image_url: 'https://via.placeholder.com/200x400'
   )
   project.save!
 end

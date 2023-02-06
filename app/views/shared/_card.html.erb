@@ -1,14 +1,9 @@
 <% @projects.each do |project| %>
   <div class="card">
-    <div class="project-image"><img class=project-image-url src=<%=project.image_url%> alt="card image"></div>
-    <div class="card-content">
+    <div class="relative pb-2/3"><img class='project-image-url absolute h-full w-full object-cover' src=<%=project.image_url%> alt="card image"></div>
+    <div class="p-5">
       <div class="project-name"><%= link_to project.name.capitalize, project_path(project.name)%></div>
-      <%= link_to 'Read more', project_path(project.name), class: 'button button-inv bottom-0 right-0' %>
+      <%= link_to 'Read more', project_path(project.name), class: 'button button-inv' %>
     </div>
   </div>
 <% end %>
-
-<script>
-// script to add icons relative to languages used.
-// ruby icon --> <box-icon type='logo' name='sketch'></box-icon>
-</script>

@@ -5,7 +5,7 @@
   }
 
   .button.button-inv {
-    @apply border border-secondary bg-primary text-secondary
+    @apply border border-secondary bg-primary text-secondary absolute -bottom-5 right-4 z-10
   }
 
   .button.button-inv:hover {

@@ -1,15 +1,11 @@
 @layer components {
 
   .cards {
-    @apply grid lg:grid-cols-4 grid-cols-1 gap-3 mx-auto mb-20
+    @apply grid lg:grid-cols-4 grid-cols-1 gap-y-8 gap-x-2 mx-auto mb-20 justify-center
   }
 
   .cards .card {
-    @apply max-w-sm border-slate-400 border rounded-lg font-mono tracking-tight
-  }
-
-  .card .card-content {
-    @apply p-5
+    @apply max-w-sm border-slate-400 border rounded-lg font-mono tracking-tight relative z-0
   }
 
   .card .project-image-url {
@@ -17,15 +13,11 @@
   }
 
   .card .project-name {
-    @apply text-left py-1 text-xl font-normal my-4
+    @apply text-left py-1 text-xl font-normal mt-1 mb-4
   }
 
   .card .project-language {
     @apply flex rounded-xl border text-center text-xs gap-1 w-fit px-5 py-1 mx-auto my-1 items-center
   }
-
-  /* .card:hover {
-    @apply transition ease-out duration-100 scale-[1.04]
-  } */
 
 }
