@@ -28,21 +28,18 @@
   </div>
 
   <script>
-    let tooltip = document.querySelector(".tooltip")
-    let emailIcon = document.querySelector("#email-icon")
-
     function toggleAnimation(input) {
-      emailIcon.attributes['animation'].nodeValue = input;
+      document.querySelector("#email-icon").attributes['animation'].nodeValue = input;
     }
 
     function clipboard(text) {
       navigator.clipboard.writeText(text);
-      tooltip.classList.add("copied");
+      document.querySelector(".tooltip").classList.add("copied");
       setTimeout(hideTooltip, 3000);
     }
 
     function hideTooltip() {
-      tooltip.classList.remove("copied");
+      document.querySelector(".tooltip").classList.remove("copied");
     }
   </script>
 
