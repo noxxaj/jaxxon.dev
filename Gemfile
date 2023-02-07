@@ -73,6 +73,7 @@ end
 
 gem "tailwindcss-rails", "~> 2.0"
 gem "faker"
+gem "breadcrumbs_on_rails"
 
 # updated dependencies to increase security
 gem 'globalid', '~> 1.0.1'
