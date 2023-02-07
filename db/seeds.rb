@@ -12,9 +12,9 @@ Project.destroy_all
 7.times do
   project = Project.create(
     name: Faker::Company.bs.to_s,
-    description: 'this is a great web app',
+    description: Faker::Lorem.paragraph(sentence_count: 5, supplemental: true, random_sentences_to_add: 4),
     category: 'web development',
-    language: Faker::ProgrammingLanguage.name.to_s,
+    language: [Faker::ProgrammingLanguage.name.to_s, Faker::ProgrammingLanguage.name.to_s],
     image_url: 'https://via.placeholder.com/200x400'
   )
   project.save!

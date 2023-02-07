@@ -19,7 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_02_182231) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.text "description", default: "Info about the project"
-    t.string "language"
+    t.array "language"
     t.string "category"
     t.string "image_url"
     t.boolean "featured?", default: false
