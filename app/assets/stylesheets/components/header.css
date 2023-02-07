@@ -1,7 +1,7 @@
 @layer components {
 
   .wrapper {
-    @apply flex mt-4 p-5 text-xl items-center container mx-auto
+    @apply flex mt-4 text-xl items-center container mx-auto
   }
 
   .header {
@@ -13,7 +13,7 @@
   }
 
   #logo {
-    @apply my-auto font-firacode text-2xl
+    @apply my-auto text-2xl px-5 py-2 rounded-lg bg-secondary text-primary font-mono
   }
 
 }
