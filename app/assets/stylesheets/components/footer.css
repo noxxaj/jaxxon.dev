@@ -5,7 +5,7 @@
   }
 
   .footer-row {
-    @apply flex gap-10
+    @apply flex gap-10 text-lg
   }
 
   .footer-row .footer-item {

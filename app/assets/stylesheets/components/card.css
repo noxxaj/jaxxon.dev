@@ -5,11 +5,11 @@
   }
 
   .cards .card {
-    @apply max-w-sm border-slate-400 border rounded-lg font-mono tracking-tight relative z-0
+    @apply max-w-sm border-secondary border-2 rounded-lg font-mono tracking-tight relative
   }
 
   .card .project-image-url {
-    @apply mx-auto rounded-t-lg
+    @apply mx-auto rounded-t-md
   }
 
   .card .project-name {

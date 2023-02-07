@@ -13,7 +13,7 @@
   }
 
   #logo {
-    @apply my-auto font-mono text-2xl
+    @apply my-auto font-firacode text-2xl
   }
 
 }
