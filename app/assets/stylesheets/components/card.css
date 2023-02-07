@@ -1,7 +1,7 @@
 @layer components {
 
   .cards {
-    @apply grid lg:grid-cols-4 grid-cols-1 gap-y-8 gap-x-2 mx-auto mb-20 justify-center
+    @apply grid lg:grid-cols-4 grid-cols-1 gap-y-8 gap-x-2 mx-auto mb-20
   }
 
   .cards .card {

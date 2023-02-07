@@ -1,6 +1,21 @@
 <div class="container">
-  <div class="project">
-    <h1><%= @project.name %></h1>
-
+  <div class="relative project border border-secondary rounded-2xl">
+    <div class="relative pb-1/4">
+      <img class='project-image-url rounded-t-2xl absolute h-full w-full object-cover' src=<%=@project.image_url%> alt="card image">
+    </div>
+    <div class='relative flex flex-col px-10 py-8 '>
+      <div class='text-4xl pb-3 font-bold'><%= @project.name.capitalize %></div>
+      <div class='flex flex-row gap-2'>
+        <% @project.language.each do |lang| %>
+          <div class='rounded-xl border border-secondary font-mono text-center w-fit px-5 py-1 my-1'>
+            <%= lang %>
+          </div>
+        <% end %>
+      </div>
+      <p class='py-8 font-mono'><%= @project.description %></p>
+      <div class='absolute font-mono top-0 right-0 p-5 border rounded-bl-2xl border-b-secondary border-l-secondary border-t-0 border-r-0'>
+        <%= link_to 'View git repo', @project.git_link %>
+      </div>
+    </div>
   </div>
 </div>

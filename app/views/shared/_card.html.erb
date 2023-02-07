@@ -1,6 +1,8 @@
 <% @projects.each do |project| %>
   <div class="card">
-    <div class="relative pb-2/3"><img class='project-image-url absolute h-full w-full object-cover' src=<%=project.image_url%> alt="card image"></div>
+    <div class="relative pb-2/3">
+      <img class='project-image-url absolute h-full w-full object-cover' src=<%=project.image_url%> alt="card image">
+    </div>
     <div class="p-5">
       <div class="project-name"><%= link_to project.name.capitalize, project_path(project.name)%></div>
       <%= link_to 'Read more', project_path(project.name), class: 'button button-inv' %>

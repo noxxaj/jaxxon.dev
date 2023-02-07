@@ -25,7 +25,7 @@ end
     name: Faker::Company.bs.to_s,
     description: 'this is a great web app',
     category: 'web development',
-    language: Faker::ProgrammingLanguage.name.to_s,
+    language: [Faker::ProgrammingLanguage.name],
     image_url: 'https://via.placeholder.com/400x200',
     featured?: true
   )

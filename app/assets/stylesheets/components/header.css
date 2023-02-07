@@ -13,7 +13,7 @@
   }
 
   #logo {
-    @apply my-auto text-2xl px-5 py-2 rounded-lg bg-secondary text-primary font-mono
+    @apply my-auto text-2xl font-mono
   }
 
 }
