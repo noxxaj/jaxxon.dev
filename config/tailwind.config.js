@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
@@ -53,5 +54,18 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
+    plugin(function({ addComponents }) {
+      addComponents({
+        '.link': {
+          'color': 'white',
+          'font-weight': 'bold',
+          'text-decoration-thickness': 'from-font',
+          'text-underline-offset': '8px',
+          '&:hover': {
+            'text-decoration-line': 'underline'
+            },
+      },
+      })
+    })
   ]
 }
