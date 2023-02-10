@@ -35,11 +35,9 @@
     function clipboard(text) {
       navigator.clipboard.writeText(text);
       document.querySelector(".tooltip").classList.add("copied");
-      setTimeout(hideTooltip, 3000);
-    }
-
-    function hideTooltip() {
-      document.querySelector(".tooltip").classList.remove("copied");
+      setTimeout(() => {
+        document.querySelector(".tooltip").classList.remove("copied");
+      }, 3000);
     }
   </script>
 
