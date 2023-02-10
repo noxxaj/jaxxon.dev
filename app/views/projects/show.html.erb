@@ -1,9 +1,9 @@
 <div class="container">
   <div class="relative project border border-secondary rounded-2xl">
-    <div class="relative pb-1/4">
+    <div class="relative pb-1/3 hover:pb-1/2 transition-all delay-200">
       <img class='project-image-url rounded-t-2xl absolute h-full w-full object-cover' src=<%=@project.image_url%> alt="card image">
     </div>
-    <div class='relative flex flex-col px-10 py-8 '>
+    <div class='relative flex flex-col px-10 py-8'>
       <div class='text-4xl pb-3 font-bold'><%= @project.name.capitalize %></div>
       <div class='flex flex-row gap-2'>
         <% @project.language.each do |lang| %>
