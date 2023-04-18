@@ -77,4 +77,4 @@ gem "breadcrumbs_on_rails"
 
 # updated dependencies to increase security
 gem 'globalid', '~> 1.0.1'
-gem 'rack', '~> 2.2.6.1'
+gem 'rack', '~> 2.2.6.4'
